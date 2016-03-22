@@ -2,10 +2,12 @@ source 'https://rubygems.org'
 
 ruby '2.2.3'
 
-gem 'sinatra'
-gem 'rake'
 gem 'data_mapper'
 gem 'dm-postgres-adapter'
+gem 'database_cleaner'
+gem 'capybara'
+gem 'rspec'
+gem 'sinatra'
 
 group :test do
   gem 'rspec'
@@ -19,5 +21,5 @@ group :test do
   gem 'selenium-webdriver'
   # gem 'data_mapper'
   # gem 'dm-postgres-adapter'
-  gem 'database_cleaner'
+  # gem 'database_cleaner'
 end
