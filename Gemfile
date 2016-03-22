@@ -10,13 +10,13 @@ gem 'rspec'
 gem 'sinatra'
 
 group :test do
-  gem 'rspec'
+  # gem 'rspec'
 
   gem 'rspec-sinatra'
   #gem 'rubocop-rspec'
   #gem 'rubocop'
   gem 'coveralls', require: false
-  gem 'capybara'
+  # gem 'capybara'
   gem 'byebug'
   gem 'selenium-webdriver'
   # gem 'data_mapper'
