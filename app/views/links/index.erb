@@ -5,6 +5,11 @@
   <li>
     Title:  <%= link.title  %>
     URL:    <a href= "<%= link.url %>" ><%= link.url %></a>
+    Tags: <%= link.tags.map(&:name).join(", ")  %>
   </li>
   <% end %>
 </ul>
+
+<p>
+  <a href="/links/new">Add link</a>
+</p>
