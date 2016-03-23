@@ -17,8 +17,9 @@ class App < Sinatra::Base
 
   post '/links' do
     link = Link.create(url: params[:url], title: params[:title])
-    tag = Tag.create(name: params[:tags])
-    link.tags << tag
+    params[:tags].split.each do |one_tag|
+      link.tags << Tag.create(name: one_tag)
+    end
     link.save
     redirect to('/links')
   end
